@@ -1,0 +1,30 @@
+@import "variables";
+@import "mixins";
+
+section.about{
+    @include center;
+    flex-direction: column;
+
+    .background-svg{
+        height: 100px;
+        width: 113%;
+        background: url(../assets/images/about.svg) no-repeat left;
+        background-size: 380px;
+    }
+
+    h1{
+        font-size: 2em;
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            width: 60px;
+            height: 10px;
+            left: 0;
+            bottom: 15%;
+            z-index: -1;
+            background-color: $blue-project;
+        }
+    }
+}
