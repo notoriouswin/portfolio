@@ -14,17 +14,23 @@ header .logo {
   height: 50%;
   width: 120px;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 header .logo a {
+  width: 100%;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-top: 8px;
   text-decoration: none;
   color: white;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
-header .logo a img {
-  width: 100%;
+header .logo a span {
+  font-family: monospace;
+  color: #3793FF;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 header menu {
   width: 22px;
