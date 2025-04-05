@@ -10,51 +10,50 @@ header{
     backdrop-filter: blur(3px);
     display: flex;
     align-items: center;
-    justify-content: space-between;
     position: fixed;
 
-    .logo{
-        height: 50%;
-        width: 120px;
+    .header-container{
+        height: 15px;
+        width: 100%;
         display: flex;
+        align-items: center;
+        justify-content: space-between;
+     
 
-        a{  
-            width: 100%;
-            height: 18px;
-            @include center;
-            padding-top: 8px;
-            text-decoration: none;
-            color: white;
-            font-size: 1.2rem;
+        .logo{
+            height: 100%;
+            display: flex;
+            align-items: center;
 
-            span{
-                font-family: monospace;
-                color: $blue-project;
-                font-weight: bold;
-                font-size: 1.2rem;
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: 1.1rem;
+
+                span{
+                    color: $blue-project;
+                    font-family:  arial;
+                    font-size: 1rem;
+                    font-weight: bold;
+                }
             }
         }
-    }
 
-    menu{
-        width: 22px;
-        height: 100%;
-        @include center;
+        menu{
+            height: 100%;
 
-        .hamburger{
-            width: 30px;
-            height: 17px;
-            border: none;
-            background-color: none;
-            cursor: pointer;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            .hamburger{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                cursor: pointer;
 
-            span{
-                width: 100%;
-                height: 2px;
-                background-color: white;
+                span{
+                    height: 2px;
+                    width: 20px;
+                    background-color: white;
+                }
             }
         }
     }
