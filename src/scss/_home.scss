@@ -1,0 +1,66 @@
+@import "variables";
+
+section.home{
+    @include center;
+    background: url(../assets/images/text.svg) no-repeat center;
+    background-size: contain;
+
+    div.introduction{
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 20px;
+
+        h1{
+            font-size: 1.3rem;
+            font-weight: 500;
+            line-height: 2.5rem;
+
+            span{
+                font-size: 1.8rem;
+            }
+        }
+
+        p{
+            width: 360px;
+            font-weight: 300;
+            line-height: 1.6rem;
+            margin-bottom: 10px;
+        }
+
+        .social-links{
+            width: 180px;
+            height: 45px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+
+            a{
+                height: 100%;
+                width: 45px;
+                @include center;
+                background-color: $gray-project;
+                cursor: pointer;
+                border-radius: 10px;
+            }
+        }
+
+        input.btn{
+            width: 180px;
+            height: 46px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: 600;
+            transition: all 0.3s;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
