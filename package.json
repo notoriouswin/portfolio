@@ -1,0 +1,22 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass src/scss/style.scss src/css/style.css --watch" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/notoriouswin/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/notoriouswin/portfolio/issues"
+  },
+  "homepage": "https://github.com/notoriouswin/portfolio#readme",
+  "devDependencies": {
+    "sass": "^1.86.3"
+  }
+}
