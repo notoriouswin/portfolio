@@ -8,6 +8,7 @@ header {
   display: flex;
   align-items: center;
   position: fixed;
+  z-index: 1;
 }
 header .header-container {
   height: 15px;
@@ -48,12 +49,23 @@ header .header-container menu .hamburger span {
   background-color: white;
 }
 
+@keyframes todown {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    top: 100%;
+    opacity: 0;
+  }
+}
 section.home {
   display: flex;
   justify-content: center;
   align-items: center;
   background: url(../assets/images/text.svg) no-repeat center;
   background-size: contain;
+  position: relative;
+  z-index: 0;
 }
 section.home div.introduction {
   width: 100%;
@@ -107,6 +119,51 @@ section.home div.introduction button {
 }
 section.home div.introduction button:hover {
   transform: scale(1.1);
+}
+section.home .arrow {
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+  height: 60px;
+  display: flex;
+}
+section.home .arrow span.one {
+  width: 10px;
+  height: 10px;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  transform: rotate(45deg) translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  top: 20%;
+  animation: todown 2s infinite ease-out;
+}
+section.home .arrow span.two {
+  width: 10px;
+  height: 10px;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  transform: rotate(45deg) translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  top: 20%;
+  animation: todown 2s infinite ease-out;
+  animation-delay: -0.2s;
+}
+section.home .arrow span.three {
+  width: 10px;
+  height: 10px;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  transform: rotate(45deg) translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  top: 20%;
+  animation: todown 2s infinite ease-out;
+  animation-delay: -0.4s;
 }
 
 * {
