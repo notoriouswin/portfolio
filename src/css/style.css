@@ -167,6 +167,7 @@ section.home .arrow span.three {
 }
 
 section.about {
+  height: 140dvh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -181,6 +182,7 @@ section.about .background-svg {
 section.about h1 {
   font-size: 2em;
   position: relative;
+  margin-bottom: 20px;
 }
 section.about h1::after {
   content: "";
@@ -191,6 +193,24 @@ section.about h1::after {
   bottom: 15%;
   z-index: -1;
   background-color: #3793FF;
+}
+section.about .profile-picture {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+section.about .profile-picture img {
+  height: 100%;
+  border-radius: 100px;
+}
+section.about .text p {
+  width: 360px;
+  font-weight: 500;
+  line-height: 2rem;
+  text-align: justify;
+  margin-bottom: 20px;
 }
 
 * {
