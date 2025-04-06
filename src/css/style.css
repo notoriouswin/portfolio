@@ -272,6 +272,13 @@ header .header-container menu .hamburger span {
     margin-bottom: 20px;
   }
 }
+
+@media (max-width: 360px) {
+  section.about {
+    height: 130vh;
+  }
+}
+
 /* MOBILE LARGOS */
 @media (max-width: 600px) {
   .projects {
@@ -345,7 +352,7 @@ header .header-container menu .hamburger span {
 /* CELULARES MAIS ESTREITOS PORÉM COM ALTURA GRANDE*/
 @media (max-width: 480px) {
   .projects {
-    height: 130vh;
+    height: 120vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -414,7 +421,7 @@ header .header-container menu .hamburger span {
 }
 @media (max-width: 380px) {
   .projects {
-    height: 170vh;
+    height: 165vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -481,6 +488,54 @@ header .header-container menu .hamburger span {
     transform: scale(1.1);
   }
 }
+@media (max-width: 360px) {
+  .projects {
+    height: 150vh;
+  }
+  .projects .project {
+    background-color: #111111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 250px;
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    padding: 20px 0px;
+  }
+  .projects .project p {
+    text-align: center;
+    font-weight: 400;
+    padding: 0px 30px;
+    font-size: 0.9rem;
+  }
+  .projects .project .languages {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  .projects .project a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    color: black;
+    width: 195px;
+    height: 48px;
+    padding: 5px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.3s;
+    text-decoration: none;
+  }
+}
 /* MOBILE LARGOS */
 @media (max-width: 600px) {
   .contact {
@@ -533,12 +588,12 @@ header .header-container menu .hamburger span {
 /* CELULARES MAIS ESTREITOS PORÉM COM ALTURA GRANDE*/
 @media (max-width: 480px) {
   .contact {
-    height: 35vh;
+    height: 45vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 0px 30px;
@@ -579,6 +634,21 @@ header .header-container menu .hamburger span {
   }
   .contact .links .social:hover {
     color: #3793FF;
+  }
+}
+@media (max-width: 412px) {
+  .contact {
+    height: 60vh;
+  }
+}
+@media (max-width: 380px) {
+  .contact {
+    height: 40vh;
+  }
+}
+@media (max-width: 360px) {
+  .contact {
+    height: 50vh;
   }
 }
 footer {
@@ -630,7 +700,7 @@ section {
 }
 @media (max-width: 412px) {
   body {
-    height: 410dvh;
+    height: 400dvh;
   }
 }
 @media (max-width: 380px) {

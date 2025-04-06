@@ -74,10 +74,10 @@
 @media (max-width: 480px){
 
     .contact{
-        height: 35vh;
+        height: 45vh;
         width: 100%;
         @include center;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
         flex-direction: column;
         padding: 0px 30px;
@@ -125,6 +125,37 @@
                 }
             }
         }
+    }
+
+}
+
+
+
+
+
+
+@media (max-width:412px){
+
+    .contact{
+        height: 60vh;
+    }
+    
+}
+
+
+@media (max-width: 380px) {
+
+    .contact{
+        height: 40vh;
+    }
+
+}
+
+
+@media (max-width: 360px){
+
+    .contact{
+        height: 50vh;
     }
 
 }
