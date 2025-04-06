@@ -3,9 +3,9 @@
 Este projeto foi desenvolvido com o objetivo de apresentar meus projetos, habilidades e contar um pouco sobre mim enquanto evoluo como desenvolvedor front-end.</p>
 
 <div align=center>
-  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white">
-  <img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white">
-  <img src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white">
+  <img src="https://img.shields.io/badge/HTML5-122F2B?style=for-the-badge&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/SASS-122F2B?style=for-the-badge&logo=sass&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-122F2B?style=for-the-badge&logo=javascript&logoColor=white" />
 </div>
 
 <br>
