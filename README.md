@@ -1,10 +1,11 @@
-<h3 align=center font-size=1.5em>👽 Portfólio</h3> 
+<h1 align=center>👽 Portfólio</h1> 
 
-<p align=center>
+<div align=center>
+  <h2>Tecnologias ou Linguagens</h2>
   <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white">
   <img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white">
   <img src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white">
-</p>
+</div>
 
 ## 📫 Contribuindo para o Portfólio
 
