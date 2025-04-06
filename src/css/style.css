@@ -280,12 +280,13 @@ section.about .text p {
 }
 
 .contact {
-  height: 100dvh;
+  height: 80dvh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: flex-end;
   flex-direction: column;
-  padding-top: 200px;
 }
 .contact h1 {
   font-size: 1.3rem;
@@ -348,7 +349,7 @@ footer p a {
 body {
   background-color: #08070B;
   color: white;
-  height: 500dvh;
+  height: 490dvh;
   width: 100%;
 }
 
