@@ -6,7 +6,7 @@
 @media (max-width: 600px){
 
     section.about{
-        height: 140dvh;
+        height: 145dvh;
         @include center;
         flex-direction: column;
     
@@ -72,7 +72,7 @@
 
 /* CELULARES MAIS ESTREITOS PORÉM COM ALTURA GRANDE*/
 
-@media (max-width: 600px){
+@media (max-width: 480px){
 
     section.about{
         height: 120dvh;
