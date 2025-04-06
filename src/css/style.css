@@ -251,10 +251,12 @@ section.about .text p {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 35px;
-  padding: 10px;
+  padding: 30px;
 }
 .projects .project p {
   text-align: center;
+  font-weight: 300;
+  width: 390px;
 }
 .projects .project a {
   display: flex;
