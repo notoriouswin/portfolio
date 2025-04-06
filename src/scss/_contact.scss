@@ -3,10 +3,9 @@
 @import "mixins";
 
 .contact{
-    height: 60dvh;
+    height: 350px;
     width: 100%;
     @include center;
-    justify-content: center;
     flex-direction: column;
     padding: 0px 30px;
 

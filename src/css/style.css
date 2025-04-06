@@ -280,12 +280,11 @@ section.about .text p {
 }
 
 .contact {
-  height: 60dvh;
+  height: 350px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
   padding: 0px 30px;
 }
@@ -350,7 +349,7 @@ footer p a {
 body {
   background-color: #08070B;
   color: white;
-  height: 470dvh;
+  min-height: calc(400dvh + 350px);
   width: 100%;
 }
 
