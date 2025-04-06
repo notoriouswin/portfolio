@@ -3,7 +3,7 @@
 @import "mixins";
 
 .contact{
-    height: 350px;
+    height: 50dvh;
     width: 100%;
     @include center;
     flex-direction: column;
