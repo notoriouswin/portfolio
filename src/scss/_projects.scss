@@ -102,6 +102,7 @@
         flex-direction: column;
     
         .background-svg{
+            overflow-x: hidden;
             height: 100px;
             width: 100vw;
             background: url(../assets/images/projects.svg) no-repeat left;

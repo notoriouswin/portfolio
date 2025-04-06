@@ -232,6 +232,7 @@ header .header-container menu .hamburger span {
     flex-direction: column;
   }
   section.about .background-svg {
+    overflow-x: hidden;
     height: 100px;
     width: 113%;
     background: url(../assets/images/about.svg) no-repeat left;
@@ -350,6 +351,7 @@ header .header-container menu .hamburger span {
     flex-direction: column;
   }
   .projects .background-svg {
+    overflow-x: hidden;
     height: 100px;
     width: 100vw;
     background: url(../assets/images/projects.svg) no-repeat left;
