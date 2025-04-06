@@ -639,7 +639,7 @@ header .header-container menu .hamburger span {
   }
 }
 footer {
-  height: 60px;
+  height: 6vh;
   width: 100%;
   padding: 20px 30px;
   display: flex;
@@ -693,7 +693,7 @@ section {
 }
 @media (max-width: 412px) and (min-height: 900px) {
   body {
-    height: auto;
+    height: 420dvh;
   }
 }
 @media (max-width: 380px) {
