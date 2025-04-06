@@ -183,6 +183,7 @@ header .header-container menu .hamburger span {
   }
   section.about .background-svg {
     height: 100px;
+    overflow-x: hidden;
     width: 113%;
     background: url(../assets/images/about.svg) no-repeat left;
     background-size: 380px;
@@ -281,6 +282,7 @@ header .header-container menu .hamburger span {
   .projects .background-svg {
     height: 100px;
     width: 100vw;
+    overflow-x: hidden;
     background: url(../assets/images/projects.svg) no-repeat left;
     background-size: 400px;
   }
@@ -536,7 +538,6 @@ body {
   color: white;
   height: 465dvh;
   width: 100%;
-  overflow-x: hidden;
 }
 
 main {

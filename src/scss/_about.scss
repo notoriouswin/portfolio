@@ -12,6 +12,7 @@
     
         .background-svg{
             height: 100px;
+            overflow-x: hidden;
             width: 113%;
             background: url(../assets/images/about.svg) no-repeat left;
             background-size: 380px;
