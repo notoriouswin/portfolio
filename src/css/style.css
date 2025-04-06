@@ -324,6 +324,20 @@ section.about .text p {
   color: #3793FF;
 }
 
+footer {
+  width: 100%;
+  padding: 20px 30px;
+}
+footer p {
+  font-size: 12px;
+  color: #919489;
+  font-weight: 600;
+}
+footer p a {
+  color: white;
+  text-decoration: none;
+}
+
 * {
   margin: 0;
   padding: 0;

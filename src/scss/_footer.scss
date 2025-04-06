@@ -1,0 +1,19 @@
+@import "variables";
+
+@import "mixins";
+
+footer{
+    width: 100%;
+    padding: 20px 30px;
+
+    p{
+        font-size: 12px;
+        color: #919489;
+        font-weight: 600;
+
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
