@@ -247,18 +247,16 @@ section.about .text p {
   align-items: center;
   flex-direction: column;
   gap: 15px;
-  height: 270px;
+  height: 250px;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 20px;
   margin-bottom: 40px;
-}
-.projects .project h2 {
-  font-size: 1.6rem;
 }
 .projects .project p {
   text-align: center;
   font-weight: 300;
-  width: 390px;
+  padding: 0px 30px;
+  font-size: 0.9rem;
 }
 .projects .project a {
   display: flex;
