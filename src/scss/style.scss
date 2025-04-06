@@ -49,5 +49,7 @@ section {
 }
 
 @media (max-width: 412px) {
-    height: 400dvh;
+    body{
+        height: 400dvh;
+    }
 }
