@@ -328,9 +328,11 @@ section.about .text p {
 footer {
   width: 100%;
   padding: 20px 30px;
+  display: flex;
+  justify-content: center;
 }
 footer p {
-  font-size: 12px;
+  font-size: 10px;
   color: #919489;
   font-weight: 600;
 }
