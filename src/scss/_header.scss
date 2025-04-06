@@ -1,61 +1,63 @@
 @import "variables";
-
 @import "mixins";
 
-header{
-    height: 70px;
+// Estilos para o cabeçalho fixo
+header {
+  height: 70px;
+  width: 100%;
+  padding: 0px 25px;
+  background-color: #08070bde;
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+
+  // Container principal do cabeçalho
+  .header-container {
+    height: 15px;
     width: 100%;
-    padding: 0px 25px;
-    background-color: #08070bde;
-    backdrop-filter: blur(3px);
     display: flex;
     align-items: center;
-    position: fixed;
-    z-index: 1;
+    justify-content: space-between;
 
-    .header-container{
-        height: 15px;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-     
+    // Logo do cabeçalho
+    .logo {
+      height: 100%;
+      display: flex;
+      align-items: center;
 
-        .logo{
-            height: 100%;
-            display: flex;
-            align-items: center;
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.1rem;
 
-            a{
-                text-decoration: none;
-                color: white;
-                font-size: 1.1rem;
-
-                span{
-                    color: $blue-project;
-                    font-family:  arial;
-                    font-size: 1rem;
-                    font-weight: bold;
-                }
-            }
+        span {
+          color: $blue-project;
+          font-family: arial;
+          font-size: 1rem;
+          font-weight: bold;
         }
-
-        menu{
-            height: 100%;
-
-            .hamburger{
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                cursor: pointer;
-
-                span{
-                    height: 2px;
-                    width: 20px;
-                    background-color: white;
-                }
-            }
-        }
+      }
     }
+
+    // Menu do cabeçalho
+    menu {
+      height: 100%;
+
+      .hamburger {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+
+        span {
+          height: 2px;
+          width: 20px;
+          background-color: white;
+        }
+      }
+    }
+  }
 }

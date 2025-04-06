@@ -1,161 +1,143 @@
 @import "variables";
-
 @import "mixins";
 
+// Estilos para dispositivos móveis (largos)
+@media (max-width: 600px) {
+  .contact {
+    height: 65vh;
+    width: 100%;
+    @include center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
 
-/* MOBILE LARGOS */
-
-@media (max-width: 600px){
-
-    .contact{
-        height: 65vh;
-        width: 100%;
-        @include center;
-        justify-content: center;
-        flex-direction: column;
-        padding: 0px 30px;
-    
-        h1{
-            font-size: 1.3rem;
-            margin-bottom: 20px;
-        }
-    
-        h2{
-            font-size: 1rem;
-            color: $gray-project;
-            margin-bottom: 30px;
-        }
-    
-        a{
-            text-decoration: none;
-            color: $blue-project;
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin-bottom: 30px;
-        }
-    
-        p{
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-bottom: 40px;
-        }
-    
-        .links{
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-    
-            .social{
-                font-size: 1rem;
-                text-transform: uppercase;
-                color: #919489;
-                transition: all 0.3s;
-    
-                &:hover{
-                    color: $blue-project;
-                }
-            }
-        }
+    // Título principal
+    h1 {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
     }
 
-}
-
-
-
-
-
-
-
-
-
-/* CELULARES MAIS ESTREITOS PORÉM COM ALTURA GRANDE*/
-
-@media (max-width: 480px){
-
-    .contact{
-        height: 45vh;
-        width: 100%;
-        @include center;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding: 0px 30px;
-    
-        h1{
-            text-align: center;
-            font-size: 1.3rem;
-            margin-bottom: 20px;
-        }
-    
-        h2{
-            font-size: 1rem;
-            color: $gray-project;
-            margin-bottom: 30px;
-        }
-    
-        a{
-            text-decoration: none;
-            color: $blue-project;
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin-bottom: 30px;
-        }
-    
-        p{
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-bottom: 40px;
-        }
-    
-        .links{
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-    
-            .social{
-                font-size: 1rem;
-                text-transform: uppercase;
-                color: #919489;
-                transition: all 0.3s;
-    
-                &:hover{
-                    color: $blue-project;
-                }
-            }
-        }
+    // Subtítulo
+    h2 {
+      font-size: 1rem;
+      color: $gray-project;
+      margin-bottom: 30px;
     }
 
-}
-
-
-
-
-
-
-@media (max-width:412px){
-
-    .contact{
-        height: 60vh;
+    // Link principal
+    a {
+      text-decoration: none;
+      color: $blue-project;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 30px;
     }
-    
+
+    // Texto descritivo
+    p {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 40px;
+    }
+
+    // Links sociais
+    .links {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+
+      .social {
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: #919489;
+        transition: all 0.3s;
+
+        &:hover {
+          color: $blue-project;
+        }
+      }
+    }
+  }
 }
 
+// Estilos para dispositivos menores (altura grande)
+@media (max-width: 480px) {
+  .contact {
+    height: 45vh;
+    width: 100%;
+    @include center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 30px;
+
+    // Título principal
+    h1 {
+      text-align: center;
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+    }
+
+    // Subtítulo
+    h2 {
+      font-size: 1rem;
+      color: $gray-project;
+      margin-bottom: 30px;
+    }
+
+    // Link principal
+    a {
+      text-decoration: none;
+      color: $blue-project;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    // Texto descritivo
+    p {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 40px;
+    }
+
+    // Links sociais
+    .links {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+
+      .social {
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: #919489;
+        transition: all 0.3s;
+
+        &:hover {
+          color: $blue-project;
+        }
+      }
+    }
+  }
+}
+
+// Ajustes para dispositivos muito estreitos
+@media (max-width: 412px) {
+  .contact {
+    height: 60vh;
+  }
+}
 
 @media (max-width: 380px) {
-
-    .contact{
-        height: 40vh;
-    }
-
+  .contact {
+    height: 40vh;
+  }
 }
 
-
-@media (max-width: 360px){
-
-    .contact{
-        height: 50vh;
-    }
-
+@media (max-width: 360px) {
+  .contact {
+    height: 50vh;
+  }
 }

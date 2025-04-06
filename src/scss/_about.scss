@@ -1,141 +1,131 @@
 @import "variables";
 @import "mixins";
 
-/* MOBILE LARGOS */
+// Estilos para dispositivos móveis (largos)
+@media (max-width: 600px) {
+  section.about {
+    height: 145vh;
+    @include center;
+    flex-direction: column;
 
-@media (max-width: 600px){
-
-    section.about{
-        height: 145vh;
-        @include center;
-        flex-direction: column;
-    
-        .background-svg{
-            height: 100px;
-            overflow-x: hidden;
-            width: 113%;
-            background: url(../assets/images/about.svg) no-repeat left;
-            background-size: 380px;
-        }
-    
-        h1{
-            font-size: 2em;
-            position: relative;
-            margin-bottom: 20px;
-    
-            &::after{
-                content: "";
-                position: absolute;
-                width: 60px;
-                height: 10px;
-                left: 0;
-                bottom: 15%;
-                z-index: -1;
-                background-color: $blue-project;
-            }
-        }
-    
-        .profile-picture{
-            width: 100%;
-            height: 250px;
-            display: flex;
-            justify-content: center;
-            margin-bottom: 25px;
-    
-            img{
-                height: 100%;
-                border-radius: 100px;
-            }
-        }
-    
-        .text{
-            
-    
-            p{
-                max-width: 360px;
-                font-weight: 500;
-                line-height: 2rem;
-                text-align: justify;
-                margin-bottom: 20px;
-            }
-        }
+    // Fundo SVG da seção "Sobre"
+    .background-svg {
+      height: 100px;
+      overflow-x: hidden;
+      width: 113%;
+      background: url(../assets/images/about.svg) no-repeat left;
+      background-size: 380px;
     }
 
+    // Título da seção
+    h1 {
+      font-size: 2em;
+      position: relative;
+      margin-bottom: 20px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 10px;
+        left: 0;
+        bottom: 15%;
+        z-index: -1;
+        background-color: $blue-project;
+      }
+    }
+
+    // Imagem de perfil
+    .profile-picture {
+      width: 100%;
+      height: 250px;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 25px;
+
+      img {
+        height: 100%;
+        border-radius: 100px;
+      }
+    }
+
+    // Texto da seção
+    .text {
+      p {
+        max-width: 360px;
+        font-weight: 500;
+        line-height: 2rem;
+        text-align: justify;
+        margin-bottom: 20px;
+      }
+    }
+  }
 }
 
+// Estilos para dispositivos menores (altura grande)
+@media (max-width: 480px) {
+  section.about {
+    height: 120vh;
+    @include center;
+    flex-direction: column;
 
-
-
-
-
-
-
-
-/* CELULARES MAIS ESTREITOS PORÉM COM ALTURA GRANDE*/
-
-@media (max-width: 480px){
-
-    section.about{
-        height: 120vh;
-        @include center;
-        flex-direction: column;
-    
-        .background-svg{
-            overflow-x: hidden;
-            height: 100px;
-            width: 113%;
-            background: url(../assets/images/about.svg) no-repeat left;
-            background-size: 380px;
-        }
-    
-        h1{
-            font-size: 2em;
-            position: relative;
-            margin-bottom: 20px;
-    
-            &::after{
-                content: "";
-                position: absolute;
-                width: 60px;
-                height: 10px;
-                left: 0;
-                bottom: 15%;
-                z-index: -1;
-                background-color: $blue-project;
-            }
-        }
-    
-        .profile-picture{
-            width: 100%;
-            height: 250px;
-            display: flex;
-            justify-content: center;
-            margin-bottom: 25px;
-    
-            img{
-                height: 100%;
-                border-radius: 100px;
-            }
-        }
-    
-        .text{
-            
-    
-            p{
-                max-width: 360px;
-                font-weight: 500;
-                line-height: 2rem;
-                text-align: justify;
-                margin-bottom: 20px;
-            }
-        }
+    // Fundo SVG da seção "Sobre"
+    .background-svg {
+      overflow-x: hidden;
+      height: 100px;
+      width: 113%;
+      background: url(../assets/images/about.svg) no-repeat left;
+      background-size: 380px;
     }
 
+    // Título da seção
+    h1 {
+      font-size: 2em;
+      position: relative;
+      margin-bottom: 20px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 10px;
+        left: 0;
+        bottom: 15%;
+        z-index: -1;
+        background-color: $blue-project;
+      }
+    }
+
+    // Imagem de perfil
+    .profile-picture {
+      width: 100%;
+      height: 250px;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 25px;
+
+      img {
+        height: 100%;
+        border-radius: 100px;
+      }
+    }
+
+    // Texto da seção
+    .text {
+      p {
+        max-width: 360px;
+        font-weight: 500;
+        line-height: 2rem;
+        text-align: justify;
+        margin-bottom: 20px;
+      }
+    }
+  }
 }
 
-@media (max-width: 36px){
-
-    .about{
-        height: 130vh;
-    }
+// Estilos para dispositivos muito estreitos
+@media (max-width: 360px) {
+  .about {
+    height: 130vh;
+  }
 }
