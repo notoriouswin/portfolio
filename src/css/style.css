@@ -342,7 +342,7 @@ header .header-container menu .hamburger span {
 /* CELULARES MAIS ESTREITOS PORÉM COM ALTURA GRANDE*/
 @media (max-width: 480px) {
   .projects {
-    height: 120dvh;
+    height: 130dvh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -466,10 +466,12 @@ header .header-container menu .hamburger span {
     justify-content: center;
     align-items: center;
     justify-content: flex-end;
+    align-items: center;
     flex-direction: column;
     padding: 0px 30px;
   }
   .contact h1 {
+    text-align: center;
     font-size: 1.3rem;
     margin-bottom: 20px;
   }
