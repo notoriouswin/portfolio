@@ -55,6 +55,13 @@ section {
   }
 }
 
+@media (max-width: 412px) and (min-height: 900px){
+    body{
+        height: 430dvh;
+    }
+
+}
+
 @media (max-width: 380px) {
   body {
     height: 430dvh;

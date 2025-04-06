@@ -272,13 +272,11 @@ header .header-container menu .hamburger span {
     margin-bottom: 20px;
   }
 }
-
-@media (max-width: 360px) {
-  section.about {
+@media (max-width: 36px) {
+  .about {
     height: 130vh;
   }
 }
-
 /* MOBILE LARGOS */
 @media (max-width: 600px) {
   .projects {
@@ -701,6 +699,11 @@ section {
 @media (max-width: 412px) {
   body {
     height: 400dvh;
+  }
+}
+@media (max-width: 412px) and (min-height: 900px) {
+  body {
+    height: 430dvh;
   }
 }
 @media (max-width: 380px) {
