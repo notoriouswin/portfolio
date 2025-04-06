@@ -26,7 +26,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
   <tr>
     <td align="center">
       <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/87894998?v=4" width="100px;" alt="Foto do Matheus Bessa no GitHub"/><br>
+        <img src="https://avatars.githubusercontent.com/u/93408255?v=4" width="100px;" alt="Foto do Matheus Bessa no GitHub"/><br>
         <sub>
           <b>Matheus Bessa</b>
         </sub>
