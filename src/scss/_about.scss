@@ -1,57 +1,64 @@
 @import "variables";
 @import "mixins";
 
-section.about{
-    max-height: 140dvh;
-    @include center;
-    flex-direction: column;
+/* MOBILE LARGOS */
 
-    .background-svg{
-        height: 100px;
-        max-width: 113%;
-        background: url(../assets/images/about.svg) no-repeat left;
-        background-size: 380px;
-    }
+@media (max-width: 600px){
 
-    h1{
-        font-size: 2em;
-        position: relative;
-        margin-bottom: 20px;
-
-        &::after{
-            content: "";
-            position: absolute;
-            width: 60px;
-            height: 10px;
-            left: 0;
-            bottom: 15%;
-            z-index: -1;
-            background-color: $blue-project;
+    section.about{
+        height: 140dvh;
+        @include center;
+        flex-direction: column;
+    
+        .background-svg{
+            height: 100px;
+            width: 113%;
+            background: url(../assets/images/about.svg) no-repeat left;
+            background-size: 380px;
         }
-    }
-
-    .profile-picture{
-        width: 100%;
-        height: 250px;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 25px;
-
-        img{
-            height: 100%;
-            border-radius: 100px;
-        }
-    }
-
-    .text{
-        
-
-        p{
-            max-width: 360px;
-            font-weight: 500;
-            line-height: 2rem;
-            text-align: justify;
+    
+        h1{
+            font-size: 2em;
+            position: relative;
             margin-bottom: 20px;
+    
+            &::after{
+                content: "";
+                position: absolute;
+                width: 60px;
+                height: 10px;
+                left: 0;
+                bottom: 15%;
+                z-index: -1;
+                background-color: $blue-project;
+            }
+        }
+    
+        .profile-picture{
+            width: 100%;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 25px;
+    
+            img{
+                height: 100%;
+                border-radius: 100px;
+            }
+        }
+    
+        .text{
+            
+    
+            p{
+                max-width: 360px;
+                font-weight: 500;
+                line-height: 2rem;
+                text-align: justify;
+                margin-bottom: 20px;
+            }
         }
     }
+
 }
+

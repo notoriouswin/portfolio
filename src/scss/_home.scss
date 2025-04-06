@@ -1,111 +1,121 @@
 @import "variables";
 
 @keyframes todown{
-    from{
-        opacity: 0.8;
+    0%{
+        opacity: 0;
     }
 
-    to{
+    50%{
+        opacity: 1;
+    }
+
+    100%{
         top: 100%;
         opacity: 0
     }
 }
 
-section.home{
-    @include center;
-    background: url(../assets/images/text.svg) no-repeat center;
-    background-size: contain;
-    position: relative;
-    z-index: 0;
+/* MOBILE LARGOS */
 
-    div.introduction{
+@media (max-width: 600px){
 
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        gap: 20px;
-
-        h1{
-            font-size: 1.3rem;
-            font-weight: 500;
-            line-height: 2.5rem;
-
-            span{
-                font-size: 1.8rem;
-            }
-        }
-
-        p{
-            max-width: 360px;
-            font-weight: 300;
-            line-height: 1.6rem;
-            margin-bottom: 10px;
-        }
-
-        .social-links{
-            width: 180px;
-            height: 45px;
+    section.home{
+        @include center;
+        background: url(../assets/images/text.svg) no-repeat center;
+        background-size: contain;
+        position: relative;
+        z-index: 0;
+    
+        div.introduction{
+    
+            width: 100%;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 10px;
-
-            a{
-                height: 100%;
-                width: 45px;
-                @include center;
-                background-color: $gray-project;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 20px;
+    
+            h1{
+                font-size: 1.3rem;
+                font-weight: 500;
+                line-height: 2.5rem;
+    
+                span{
+                    font-size: 1.8rem;
+                }
+            }
+    
+            p{
+                max-width: 360px;
+                font-weight: 300;
+                line-height: 1.6rem;
+                margin-bottom: 10px;
+            }
+    
+            .social-links{
+                width: 180px;
+                height: 45px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 10px;
+    
+                a{
+                    height: 100%;
+                    width: 45px;
+                    @include center;
+                    background-color: $gray-project;
+                    cursor: pointer;
+                    border-radius: 10px;
+                }
+            }
+    
+            button{
+                width: 195px;
+                height: 48px;
+                padding: 5px;
+                border: none;
+                border-radius: 50px;
                 cursor: pointer;
-                border-radius: 10px;
+                text-transform: uppercase;
+                font-weight: 600;
+                transition: all 0.3s;
+    
+                &:hover{
+                    transform: scale(1.1);
+                }
             }
         }
-
-        button{
-            width: 195px;
-            height: 48px;
-            padding: 5px;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            text-transform: uppercase;
-            font-weight: 600;
-            transition: all 0.3s;
-
-            &:hover{
-                transform: scale(1.1);
+    
+        .arrow{
+            position: absolute;
+            bottom: 5%;
+            width: 100%;
+            height: 80px;
+            display: flex;
+    
+            span.one{
+                @include arrow;
+                top: 20%;
+                
+                animation: todown  2s infinite ease-out;
             }
+    
+            span.two{
+                @include arrow;
+                top: 20%;
+                animation: todown  2s infinite ease-out;
+                animation-delay: -0.2s
+            }
+    
+            span.three{
+                @include arrow;
+                top: 20%;
+                animation: todown  2s infinite ease-out;
+                animation-delay: -0.4s
+            }
+    
+    
         }
     }
 
-    .arrow{
-        position: absolute;
-        bottom: 5%;
-        width: 100%;
-        height: 80px;
-        display: flex;
-
-        span.one{
-            @include arrow;
-            top: 20%;
-            
-            animation: todown  2s infinite ease-out;
-        }
-
-        span.two{
-            @include arrow;
-            top: 20%;
-            animation: todown  2s infinite ease-out;
-            animation-delay: -0.2s
-        }
-
-        span.three{
-            @include arrow;
-            top: 20%;
-            animation: todown  2s infinite ease-out;
-            animation-delay: -0.4s
-        }
-
-
-    }
 }

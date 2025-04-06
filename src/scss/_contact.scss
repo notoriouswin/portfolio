@@ -2,54 +2,61 @@
 
 @import "mixins";
 
-.contact{
-    max-height: 45dvh;
-    width: 100%;
-    @include center;
-    justify-content: flex-end;
-    flex-direction: column;
-    padding: 0px 30px;
 
-    h1{
-        font-size: 1.3rem;
-        margin-bottom: 20px;
-    }
+/* MOBILE LARGOS */
 
-    h2{
-        font-size: 1rem;
-        color: $gray-project;
-        margin-bottom: 30px;
-    }
+@media (max-width: 600px){
 
-    a{
-        text-decoration: none;
-        color: $blue-project;
-        font-size: 1.5rem;
-        font-weight: bold;
-        margin-bottom: 30px;
-    }
-
-    p{
-        font-size: 1.3rem;
-        font-weight: 600;
-        margin-bottom: 40px;
-    }
-
-    .links{
+    .contact{
+        height: 45dvh;
         width: 100%;
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-
-        .social{
+        @include center;
+        justify-content: flex-end;
+        flex-direction: column;
+        padding: 0px 30px;
+    
+        h1{
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+        }
+    
+        h2{
             font-size: 1rem;
-            text-transform: uppercase;
-            color: #919489;
-            transition: all 0.3s;
-
-            &:hover{
-                color: $blue-project;
+            color: $gray-project;
+            margin-bottom: 30px;
+        }
+    
+        a{
+            text-decoration: none;
+            color: $blue-project;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+    
+        p{
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 40px;
+        }
+    
+        .links{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+    
+            .social{
+                font-size: 1rem;
+                text-transform: uppercase;
+                color: #919489;
+                transition: all 0.3s;
+    
+                &:hover{
+                    color: $blue-project;
+                }
             }
         }
     }
+
 }

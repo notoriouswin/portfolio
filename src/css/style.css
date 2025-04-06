@@ -50,283 +50,294 @@ header .header-container menu .hamburger span {
 }
 
 @keyframes todown {
-  from {
-    opacity: 0.8;
+  0% {
+    opacity: 0;
   }
-  to {
+  50% {
+    opacity: 1;
+  }
+  100% {
     top: 100%;
     opacity: 0;
   }
 }
-section.home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url(../assets/images/text.svg) no-repeat center;
-  background-size: contain;
-  position: relative;
-  z-index: 0;
+/* MOBILE LARGOS */
+@media (max-width: 600px) {
+  section.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../assets/images/text.svg) no-repeat center;
+    background-size: contain;
+    position: relative;
+    z-index: 0;
+  }
+  section.home div.introduction {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  section.home div.introduction h1 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+  }
+  section.home div.introduction h1 span {
+    font-size: 1.8rem;
+  }
+  section.home div.introduction p {
+    max-width: 360px;
+    font-weight: 300;
+    line-height: 1.6rem;
+    margin-bottom: 10px;
+  }
+  section.home div.introduction .social-links {
+    width: 180px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  section.home div.introduction .social-links a {
+    height: 100%;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212024;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  section.home div.introduction button {
+    width: 195px;
+    height: 48px;
+    padding: 5px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.3s;
+  }
+  section.home div.introduction button:hover {
+    transform: scale(1.1);
+  }
+  section.home .arrow {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    height: 80px;
+    display: flex;
+  }
+  section.home .arrow span.one {
+    width: 10px;
+    height: 10px;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    transform: rotate(45deg) translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    top: 20%;
+    animation: todown 2s infinite ease-out;
+  }
+  section.home .arrow span.two {
+    width: 10px;
+    height: 10px;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    transform: rotate(45deg) translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    top: 20%;
+    animation: todown 2s infinite ease-out;
+    animation-delay: -0.2s;
+  }
+  section.home .arrow span.three {
+    width: 10px;
+    height: 10px;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    transform: rotate(45deg) translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    top: 20%;
+    animation: todown 2s infinite ease-out;
+    animation-delay: -0.4s;
+  }
 }
-section.home div.introduction {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 20px;
+/* MOBILE LARGOS */
+@media (max-width: 600px) {
+  section.about {
+    height: 140dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  section.about .background-svg {
+    height: 100px;
+    width: 113%;
+    background: url(../assets/images/about.svg) no-repeat left;
+    background-size: 380px;
+  }
+  section.about h1 {
+    font-size: 2em;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  section.about h1::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 10px;
+    left: 0;
+    bottom: 15%;
+    z-index: -1;
+    background-color: #3793FF;
+  }
+  section.about .profile-picture {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+  section.about .profile-picture img {
+    height: 100%;
+    border-radius: 100px;
+  }
+  section.about .text p {
+    max-width: 360px;
+    font-weight: 500;
+    line-height: 2rem;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
 }
-section.home div.introduction h1 {
-  font-size: 1.3rem;
-  font-weight: 500;
-  line-height: 2.5rem;
+/* MOBILE LARGOS */
+@media (max-width: 600px) {
+  .projects {
+    height: 180dvh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .projects .background-svg {
+    height: 100px;
+    width: 100vw;
+    background: url(../assets/images/projects.svg) no-repeat left;
+    background-size: 400px;
+  }
+  .projects h1 {
+    font-size: 2em;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .projects h1::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 10px;
+    left: 0;
+    bottom: 15%;
+    z-index: -1;
+    background-color: #3793FF;
+  }
+  .projects .project {
+    background-color: #111111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 250px;
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    padding: 20px 0px;
+  }
+  .projects .project p {
+    text-align: center;
+    font-weight: 400;
+    padding: 0px 30px;
+    font-size: 0.9rem;
+  }
+  .projects .project a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    color: black;
+    width: 195px;
+    height: 48px;
+    padding: 5px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.3s;
+    text-decoration: none;
+  }
+  .projects .project a:hover {
+    transform: scale(1.1);
+  }
 }
-section.home div.introduction h1 span {
-  font-size: 1.8rem;
+/* MOBILE LARGOS */
+@media (max-width: 600px) {
+  .contact {
+    height: 45dvh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 0px 30px;
+  }
+  .contact h1 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+  .contact h2 {
+    font-size: 1rem;
+    color: #212024;
+    margin-bottom: 30px;
+  }
+  .contact a {
+    text-decoration: none;
+    color: #3793FF;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  .contact p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+  .contact .links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .contact .links .social {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #919489;
+    transition: all 0.3s;
+  }
+  .contact .links .social:hover {
+    color: #3793FF;
+  }
 }
-section.home div.introduction p {
-  max-width: 360px;
-  font-weight: 300;
-  line-height: 1.6rem;
-  margin-bottom: 10px;
-}
-section.home div.introduction .social-links {
-  width: 180px;
-  height: 45px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-}
-section.home div.introduction .social-links a {
-  height: 100%;
-  width: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #212024;
-  cursor: pointer;
-  border-radius: 10px;
-}
-section.home div.introduction button {
-  width: 195px;
-  height: 48px;
-  padding: 5px;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-weight: 600;
-  transition: all 0.3s;
-}
-section.home div.introduction button:hover {
-  transform: scale(1.1);
-}
-section.home .arrow {
-  position: absolute;
-  bottom: 5%;
-  width: 100%;
-  height: 80px;
-  display: flex;
-}
-section.home .arrow span.one {
-  width: 10px;
-  height: 10px;
-  border-bottom: 1px solid white;
-  border-right: 1px solid white;
-  transform: rotate(45deg) translate(-50%, -50%);
-  position: absolute;
-  left: 50%;
-  top: 30%;
-  top: 20%;
-  animation: todown 2s infinite ease-out;
-}
-section.home .arrow span.two {
-  width: 10px;
-  height: 10px;
-  border-bottom: 1px solid white;
-  border-right: 1px solid white;
-  transform: rotate(45deg) translate(-50%, -50%);
-  position: absolute;
-  left: 50%;
-  top: 30%;
-  top: 20%;
-  animation: todown 2s infinite ease-out;
-  animation-delay: -0.2s;
-}
-section.home .arrow span.three {
-  width: 10px;
-  height: 10px;
-  border-bottom: 1px solid white;
-  border-right: 1px solid white;
-  transform: rotate(45deg) translate(-50%, -50%);
-  position: absolute;
-  left: 50%;
-  top: 30%;
-  top: 20%;
-  animation: todown 2s infinite ease-out;
-  animation-delay: -0.4s;
-}
-
-section.about {
-  max-height: 140dvh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-section.about .background-svg {
-  height: 100px;
-  max-width: 113%;
-  background: url(../assets/images/about.svg) no-repeat left;
-  background-size: 380px;
-}
-section.about h1 {
-  font-size: 2em;
-  position: relative;
-  margin-bottom: 20px;
-}
-section.about h1::after {
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 10px;
-  left: 0;
-  bottom: 15%;
-  z-index: -1;
-  background-color: #3793FF;
-}
-section.about .profile-picture {
-  width: 100%;
-  height: 250px;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 25px;
-}
-section.about .profile-picture img {
-  height: 100%;
-  border-radius: 100px;
-}
-section.about .text p {
-  max-width: 360px;
-  font-weight: 500;
-  line-height: 2rem;
-  text-align: justify;
-  margin-bottom: 20px;
-}
-
-.projects {
-  max-height: 180dvh;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.projects .background-svg {
-  height: 100px;
-  max-width: 113%;
-  background: url(../assets/images/projects.svg) no-repeat left;
-  background-size: 400px;
-}
-.projects h1 {
-  font-size: 2em;
-  position: relative;
-  margin-bottom: 20px;
-}
-.projects h1::after {
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 10px;
-  left: 0;
-  bottom: 15%;
-  z-index: -1;
-  background-color: #3793FF;
-}
-.projects .project {
-  background-color: #111111;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 10px;
-  height: 250px;
-  width: 100%;
-  border-radius: 20px;
-  margin-bottom: 40px;
-  padding: 20px 0px;
-}
-.projects .project p {
-  text-align: center;
-  font-weight: 400;
-  padding: 0px 30px;
-  font-size: 0.9rem;
-}
-.projects .project a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: white;
-  color: black;
-  width: 195px;
-  height: 48px;
-  padding: 5px;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-weight: 600;
-  transition: all 0.3s;
-  text-decoration: none;
-}
-.projects .project a:hover {
-  transform: scale(1.1);
-}
-
-.contact {
-  max-height: 45dvh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
-  flex-direction: column;
-  padding: 0px 30px;
-}
-.contact h1 {
-  font-size: 1.3rem;
-  margin-bottom: 20px;
-}
-.contact h2 {
-  font-size: 1rem;
-  color: #212024;
-  margin-bottom: 30px;
-}
-.contact a {
-  text-decoration: none;
-  color: #3793FF;
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 30px;
-}
-.contact p {
-  font-size: 1.3rem;
-  font-weight: 600;
-  margin-bottom: 40px;
-}
-.contact .links {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-.contact .links .social {
-  font-size: 1rem;
-  text-transform: uppercase;
-  color: #919489;
-  transition: all 0.3s;
-}
-.contact .links .social:hover {
-  color: #3793FF;
-}
-
 footer {
   width: 100%;
   padding: 20px 30px;
@@ -355,6 +366,7 @@ body {
   color: white;
   max-height: 430dvh;
   width: 100%;
+  overflow-x: hidden;
 }
 
 main {
