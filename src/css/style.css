@@ -214,7 +214,7 @@ section.about .text p {
 }
 
 .projects {
-  height: 200dvh;
+  height: 160dvh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -254,7 +254,7 @@ section.about .text p {
 }
 .projects .project p {
   text-align: center;
-  font-weight: 300;
+  font-weight: 400;
   padding: 0px 30px;
   font-size: 0.9rem;
 }
@@ -279,6 +279,50 @@ section.about .text p {
   transform: scale(1.1);
 }
 
+.contact {
+  height: 50dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact h1 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+.contact h2 {
+  font-size: 1rem;
+  color: #212024;
+  margin-bottom: 20px;
+}
+.contact a {
+  text-decoration: none;
+  color: #3793FF;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.contact p {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.contact .links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.contact .links .social {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #919489;
+  transition: all 0.3s;
+}
+.contact .links .social:hover {
+  color: #3793FF;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -289,7 +333,7 @@ section.about .text p {
 body {
   background-color: #08070B;
   color: white;
-  height: 550dvh;
+  height: 455dvh;
   width: 100%;
 }
 
