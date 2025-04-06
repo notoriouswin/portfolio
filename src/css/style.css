@@ -213,6 +213,70 @@ section.about .text p {
   margin-bottom: 20px;
 }
 
+.projects {
+  height: 200dvh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.projects .background-svg {
+  height: 100px;
+  width: 113%;
+  background: url(../assets/images/projects.svg) no-repeat left;
+  background-size: 400px;
+}
+.projects h1 {
+  font-size: 2em;
+  position: relative;
+  margin-bottom: 20px;
+}
+.projects h1::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 10px;
+  left: 0;
+  bottom: 15%;
+  z-index: -1;
+  background-color: #3793FF;
+}
+.projects .project {
+  background-color: #111111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  height: 250px;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  padding: 10px;
+}
+.projects .project p {
+  text-align: center;
+}
+.projects .project a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  color: black;
+  width: 195px;
+  height: 48px;
+  padding: 5px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+.projects .project a:hover {
+  transform: scale(1.1);
+}
+
 * {
   margin: 0;
   padding: 0;
