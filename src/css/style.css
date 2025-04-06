@@ -280,11 +280,12 @@ section.about .text p {
 }
 
 .contact {
-  height: 50dvh;
+  height: 100dvh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-top: 200px;
 }
 .contact h1 {
   font-size: 1.3rem;
@@ -293,14 +294,14 @@ section.about .text p {
 .contact h2 {
   font-size: 1rem;
   color: #212024;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .contact a {
   text-decoration: none;
   color: #3793FF;
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .contact p {
   font-size: 1.3rem;
@@ -333,7 +334,7 @@ section.about .text p {
 body {
   background-color: #08070B;
   color: white;
-  height: 455dvh;
+  height: 500dvh;
   width: 100%;
 }
 
