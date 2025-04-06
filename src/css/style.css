@@ -83,7 +83,7 @@ section.home div.introduction h1 span {
   font-size: 1.8rem;
 }
 section.home div.introduction p {
-  width: 360px;
+  max-width: 360px;
   font-weight: 300;
   line-height: 1.6rem;
   margin-bottom: 10px;
@@ -167,7 +167,7 @@ section.home .arrow span.three {
 }
 
 section.about {
-  height: 140dvh;
+  max-height: 140dvh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -175,7 +175,7 @@ section.about {
 }
 section.about .background-svg {
   height: 100px;
-  width: 113%;
+  max-width: 113%;
   background: url(../assets/images/about.svg) no-repeat left;
   background-size: 380px;
 }
@@ -206,7 +206,7 @@ section.about .profile-picture img {
   border-radius: 100px;
 }
 section.about .text p {
-  width: 360px;
+  max-width: 360px;
   font-weight: 500;
   line-height: 2rem;
   text-align: justify;
@@ -214,14 +214,14 @@ section.about .text p {
 }
 
 .projects {
-  height: 160dvh;
+  max-height: 180dvh;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 .projects .background-svg {
   height: 100px;
-  width: 113%;
+  max-width: 113%;
   background: url(../assets/images/projects.svg) no-repeat left;
   background-size: 400px;
 }
@@ -251,6 +251,7 @@ section.about .text p {
   width: 100%;
   border-radius: 20px;
   margin-bottom: 40px;
+  padding: 20px 0px;
 }
 .projects .project p {
   text-align: center;
@@ -280,11 +281,12 @@ section.about .text p {
 }
 
 .contact {
-  height: 50dvh;
+  max-height: 45dvh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: flex-end;
   flex-direction: column;
   padding: 0px 30px;
 }
@@ -351,7 +353,7 @@ footer p a {
 body {
   background-color: #08070B;
   color: white;
-  min-height: 450dvh;
+  max-height: 430dvh;
   width: 100%;
 }
 

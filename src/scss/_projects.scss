@@ -2,14 +2,14 @@
 @import "mixins";
 
 .projects{
-    height: 160dvh;
+    max-height: 180dvh;
     display: flex;
     align-items: center;
     flex-direction: column;
 
     .background-svg{
         height: 100px;
-        width: 113%;
+        max-width: 113%;
         background: url(../assets/images/projects.svg) no-repeat left;
         background-size: 400px;
     }
@@ -42,6 +42,7 @@
         width: 100%;
         border-radius: 20px;
         margin-bottom: 40px;
+        padding: 20px 0px;
 
 
         p{
