@@ -1,11 +1,15 @@
 <h1 align=center>👽 Portfólio</h1> 
+<p align=center>Bem-vindo(a) ao repositório do meu portfólio pessoal! 🚀  
+Este projeto foi desenvolvido com o objetivo de apresentar meus projetos, habilidades e contar um pouco sobre mim enquanto evoluo como desenvolvedor front-end.</p>
 
 <div align=center>
-  <h2>Tecnologias ou Linguagens</h2>
   <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white">
   <img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white">
   <img src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white">
 </div>
+
+<br>
+<br>
 
 ## 📫 Contribuindo para o Portfólio
 
