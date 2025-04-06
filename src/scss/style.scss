@@ -44,12 +44,18 @@ section {
 
 @media (max-width:480px){
     body{
-        height: 390dvh;
+        height: 395dvh;
     }
 }
 
 @media (max-width: 412px) {
     body{
-        height: 400dvh;
+        height: 410dvh;
     }
 }
+
+@media (max-width: 380px) {
+    body {
+      height: 430dvh;
+    }
+  }

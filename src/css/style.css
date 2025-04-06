@@ -412,15 +412,84 @@ header .header-container menu .hamburger span {
     transform: scale(1.1);
   }
 }
+@media (max-width: 380px) {
+  .projects {
+    height: 170vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .projects .background-svg {
+    overflow-x: hidden;
+    height: 100px;
+    width: 100vw;
+    background: url(../assets/images/projects.svg) no-repeat left;
+    background-size: 400px;
+  }
+  .projects h1 {
+    font-size: 2em;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .projects h1::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 10px;
+    left: 0;
+    bottom: 15%;
+    z-index: -1;
+    background-color: #3793FF;
+  }
+  .projects .project {
+    background-color: #111111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 250px;
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    padding: 20px 0px;
+  }
+  .projects .project p {
+    text-align: center;
+    font-weight: 400;
+    padding: 0px 30px;
+    font-size: 0.9rem;
+  }
+  .projects .project a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    color: black;
+    width: 195px;
+    height: 48px;
+    padding: 5px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.3s;
+    text-decoration: none;
+  }
+  .projects .project a:hover {
+    transform: scale(1.1);
+  }
+}
 /* MOBILE LARGOS */
 @media (max-width: 600px) {
   .contact {
-    height: 55vh;
+    height: 65vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     flex-direction: column;
     padding: 0px 30px;
   }
@@ -556,12 +625,17 @@ section {
 
 @media (max-width: 480px) {
   body {
-    height: 390dvh;
+    height: 395dvh;
   }
 }
 @media (max-width: 412px) {
   body {
-    height: 400dvh;
+    height: 410dvh;
+  }
+}
+@media (max-width: 380px) {
+  body {
+    height: 430dvh;
   }
 }
 
