@@ -411,9 +411,9 @@ header .header-container menu .hamburger span {
     transform: scale(1.1);
   }
 }
-@media (max-width: 413px) {
+@media (max-width: 414px) {
   .projects {
-    height: 100vh;
+    height: 125vh;
   }
 }
 @media (max-width: 380px) {
