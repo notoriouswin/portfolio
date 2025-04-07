@@ -46,12 +46,29 @@ header .header-container menu .hamburger {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
 }
 header .header-container menu .hamburger span {
   height: 2px;
   width: 25px;
   background-color: white;
   z-index: 1;
+  transition: all 0.3s;
+}
+header .header-container menu .hamburger-active span:nth-child(1) {
+  opacity: 0;
+}
+header .header-container menu .hamburger-active span:nth-child(2) {
+  transform: rotate(135deg);
+  padding: 0px;
+  position: fixed;
+  bottom: 50%;
+}
+header .header-container menu .hamburger-active span:nth-child(3) {
+  transform: rotate(-135deg);
+  padding: 0px;
+  position: fixed;
+  bottom: 50%;
 }
 header .nav-list {
   position: absolute;
@@ -67,7 +84,8 @@ header .nav-list {
   padding: 130px 0;
   clip-path: circle(100px at 90% -15%);
   pointer-events: none;
-  transition: all 0.3s ease-out;
+  transition: all 0.5s;
+  opacity: 0.5;
 }
 header .nav-list a {
   text-decoration: none;
@@ -81,6 +99,7 @@ header .nav-list a {
 header nav.active .nav-list {
   clip-path: circle(1500px at 90% -15%);
   pointer-events: all;
+  opacity: 1;
 }
 header nav.active .nav-list a {
   opacity: 1;
