@@ -335,6 +335,7 @@ header nav.active .nav-list a {
     display: flex;
     align-items: center;
     flex-direction: column;
+    scroll-margin-top: 100px;
   }
   .projects .background-svg {
     height: 100px;
@@ -484,7 +485,7 @@ header nav.active .nav-list a {
     height: 100px;
     width: 100vw;
     background: url(../assets/images/projects.svg) no-repeat left;
-    background-size: 400px;
+    background-size: 480px;
   }
   .projects h1 {
     font-size: 2em;

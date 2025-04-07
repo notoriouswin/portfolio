@@ -8,6 +8,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    scroll-margin-top: 100px;
 
     .background-svg {
       height: 100px;
@@ -176,7 +177,7 @@
       height: 100px;
       width: 100vw;
       background: url(../assets/images/projects.svg) no-repeat left;
-      background-size: 400px;
+      background-size: 480px;
     }
 
     h1 {
