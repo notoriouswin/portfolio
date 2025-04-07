@@ -32,6 +32,12 @@ body {
   overflow-x: hidden;
 }
 
+// Body class completo para menu function
+
+body.active{
+  overflow: hidden;
+}
+
 // Estilo principal
 main {
   width: 100%;

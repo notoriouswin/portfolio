@@ -5,4 +5,7 @@ function menu() {
 
     const hamburger = document.getElementById("hamburger")
     hamburger.classList.toggle("hamburger-active")
+
+    const body = document.getElementById("body")
+    body.classList.toggle("active")
 }

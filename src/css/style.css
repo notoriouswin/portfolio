@@ -737,6 +737,10 @@ body {
   overflow-x: hidden;
 }
 
+body.active {
+  overflow: hidden;
+}
+
 main {
   width: 100%;
   height: 100%;
