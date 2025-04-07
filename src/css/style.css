@@ -9,6 +9,7 @@ header {
   align-items: center;
   position: fixed;
   z-index: 1;
+  /* Estilos ativos */
 }
 header .header-container {
   height: 20px;
@@ -36,10 +37,24 @@ header .header-container .logo a span {
 header .header-container menu {
   height: 100%;
   cursor: pointer;
-  /* Estilos ativos */
+  z-index: 1;
 }
-header .header-container menu .nav-list {
-  position: fixed;
+header .header-container menu .hamburger {
+  height: 100%;
+  width: 100%;
+  padding: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+header .header-container menu .hamburger span {
+  height: 2px;
+  width: 25px;
+  background-color: white;
+  z-index: 1;
+}
+header .nav-list {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -53,24 +68,9 @@ header .header-container menu .nav-list {
   pointer-events: none;
   transition: all 0.3s ease-in-out;
 }
-header .header-container menu nav.active .nav-list {
+header nav.active .nav-list {
   clip-path: circle(1500px at 90% -15%);
   pointer-events: all;
-}
-header .header-container menu .hamburger {
-  height: 100%;
-  width: 25px;
-  padding: 1px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  z-index: 2;
-}
-header .header-container menu .hamburger span {
-  height: 2px;
-  width: 25px;
-  background-color: white;
-  z-index: 1;
 }
 
 @keyframes todown {
@@ -689,6 +689,10 @@ footer p a {
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

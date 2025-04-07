@@ -18,6 +18,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 // Estilo do corpo
 body {
   background-color: $bg-body;
