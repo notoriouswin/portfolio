@@ -11,7 +11,7 @@ header {
   z-index: 1;
 }
 header .header-container {
-  height: 15px;
+  height: 20px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -25,7 +25,7 @@ header .header-container .logo {
 header .header-container .logo a {
   text-decoration: none;
   color: white;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 header .header-container .logo a span {
   color: #3793FF;
@@ -35,18 +35,42 @@ header .header-container .logo a span {
 }
 header .header-container menu {
   height: 100%;
+  cursor: pointer;
+  /* Estilos ativos */
+}
+header .header-container menu .nav-list {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100dvh;
+  background-color: #08070B;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  clip-path: circle(100px at 90% -15%);
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+header .header-container menu nav.active .nav-list {
+  clip-path: circle(1500px at 90% -15%);
+  pointer-events: all;
 }
 header .header-container menu .hamburger {
   height: 100%;
+  width: 25px;
+  padding: 1px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  cursor: pointer;
+  z-index: 2;
 }
 header .header-container menu .hamburger span {
   height: 2px;
-  width: 20px;
+  width: 25px;
   background-color: white;
+  z-index: 1;
 }
 
 @keyframes todown {
