@@ -77,9 +77,21 @@ header {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding: 130px 0;
     clip-path: circle(100px at 90% -15%); 
     pointer-events: none;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-out;
+   }
+
+
+   .nav-list a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.1em;
+    opacity: 0;
+    transition: all 0.5s;
    }
 
    /* Estilos ativos */
@@ -87,5 +99,9 @@ header {
    nav.active .nav-list{
      clip-path: circle(1500px at 90% -15%);  
      pointer-events: all;
+   }
+
+   nav.active .nav-list a{
+    opacity: 1;
    }
 }

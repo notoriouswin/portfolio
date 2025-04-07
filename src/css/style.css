@@ -64,13 +64,26 @@ header .nav-list {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  padding: 130px 0;
   clip-path: circle(100px at 90% -15%);
   pointer-events: none;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-out;
+}
+header .nav-list a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.1em;
+  opacity: 0;
+  transition: all 0.5s;
 }
 header nav.active .nav-list {
   clip-path: circle(1500px at 90% -15%);
   pointer-events: all;
+}
+header nav.active .nav-list a {
+  opacity: 1;
 }
 
 @keyframes todown {
@@ -689,6 +702,7 @@ footer p a {
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  outline: none;
 }
 
 html {
