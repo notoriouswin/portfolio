@@ -6,21 +6,21 @@ window.revelar = ScrollReveal({reset:true})
 
 revelar.reveal('.tAbout',{
     duration: 1000,
-    distance: '200px',
+    distance: '30px',
     origin: "left",
     easing: "ease-in-out"
 })
 
 revelar.reveal('.profile-picture',{
     duration: 1000,
-    distance: '200px',
+    distance: '30px',
     origin: "right",
     easing: "ease-in-out"
 })
 
 revelar.reveal('.text',{
     duration: 1000,
-    distance: '100px',
+    distance: '30px',
     origin: "bottom",
     easing: "ease-in-out"
 })
@@ -29,14 +29,14 @@ revelar.reveal('.text',{
 
 revelar.reveal('.tProject',{
     duration: 1000,
-    distance: '200px',
+    distance: '30px',
     origin: "left",
     easing: "ease-in-out"
 })
 
 revelar.reveal('.project',{
     duration: 1000,
-    distance: '200px',
+    distance: '30px',
     origin: "left",
     easing: "ease-in-out"
 })

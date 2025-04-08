@@ -5,6 +5,7 @@
 @media (max-width: 600px) {
   section.about {
     height: 145vh;
+    width: 100%;
     @include center;
     flex-direction: column;
 
