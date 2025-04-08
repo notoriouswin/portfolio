@@ -19,6 +19,24 @@
   outline: none;
 }
 
+::-webkit-scrollbar-thumb {
+  background: rgb(60, 60, 60);
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(60, 60, 60);
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(8, 7, 11);
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(8, 7, 11);
+}
+
 html {
   scroll-behavior: smooth;
 }

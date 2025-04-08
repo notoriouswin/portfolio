@@ -1,17 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@keyframes scrollanimation {
-  0% {
-    opacity: 0;
-    transform: translateX(-100vw);
-  }
-  50% {
-    opacity: 0.2;
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0vw);
-  }
-}
 header {
   height: 70px;
   width: 100%;
@@ -239,19 +226,6 @@ header nav.active .nav-list a {
     animation-delay: -0.4s;
   }
 }
-@keyframes scrollanimation {
-  0% {
-    opacity: 0;
-    transform: translateX(-100vw);
-  }
-  50% {
-    opacity: 0.2;
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0vw);
-  }
-}
 @media (max-width: 600px) {
   section.about {
     height: 145vh;
@@ -320,9 +294,7 @@ header nav.active .nav-list a {
     font-size: 2em;
     position: relative;
     margin-bottom: 20px;
-    animation: scrollanimation 5s ease-in-out;
-    animation-timeline: view();
-    animation-range: cover 0% cover 30%;
+    visibility: hidden;
   }
   section.about h1::after {
     content: "";
@@ -340,9 +312,6 @@ header nav.active .nav-list a {
     display: flex;
     justify-content: center;
     margin-bottom: 25px;
-    animation: scrollanimation 5s ease-in-out;
-    animation-timeline: view();
-    animation-range: cover 0% cover 30%;
   }
   section.about .profile-picture img {
     height: 100%;
@@ -354,27 +323,11 @@ header nav.active .nav-list a {
     line-height: 2rem;
     text-align: justify;
     margin-bottom: 20px;
-    animation: scrollanimation 5s ease-in-out;
-    animation-timeline: view();
-    animation-range: cover 0% cover 30%;
   }
 }
 @media (max-width: 360px) {
   .about {
     height: 130vh;
-  }
-}
-@keyframes scrollanimation {
-  0% {
-    opacity: 0;
-    transform: translateX(-100vw);
-  }
-  50% {
-    opacity: 0.2;
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0vw);
   }
 }
 @media (max-width: 600px) {
@@ -396,9 +349,6 @@ header nav.active .nav-list a {
     font-size: 2em;
     position: relative;
     margin-bottom: 20px;
-    animation: scrollanimation 5s ease-in-out;
-    animation-timeline: view();
-    animation-range: cover 0% cover 30%;
   }
   .projects h1::after {
     content: "";
@@ -422,9 +372,6 @@ header nav.active .nav-list a {
     border-radius: 20px;
     margin-bottom: 40px;
     padding: 20px 0px;
-    animation: scrollanimation 5s ease-in-out;
-    animation-timeline: view();
-    animation-range: cover 0% cover 30%;
   }
   .projects .project p {
     text-align: center;
@@ -641,19 +588,6 @@ header nav.active .nav-list a {
     text-decoration: none;
   }
 }
-@keyframes scrollanimation {
-  0% {
-    opacity: 0;
-    transform: translateX(-100vw);
-  }
-  50% {
-    opacity: 0.2;
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0vw);
-  }
-}
 @media (max-width: 600px) {
   .contact {
     height: 65vh;
@@ -767,19 +701,6 @@ header nav.active .nav-list a {
     height: 50vh;
   }
 }
-@keyframes scrollanimation {
-  0% {
-    opacity: 0;
-    transform: translateX(-100vw);
-  }
-  50% {
-    opacity: 0.2;
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0vw);
-  }
-}
 footer {
   height: 40px;
   width: 100%;
@@ -803,6 +724,24 @@ footer p a {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   outline: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(60, 60, 60);
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(60, 60, 60);
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(8, 7, 11);
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(8, 7, 11);
 }
 
 html {
