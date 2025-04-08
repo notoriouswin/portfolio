@@ -104,6 +104,7 @@
       display: flex;
       justify-content: center;
       margin-bottom: 25px;
+      visibility: hidden;
 
       img {
         height: 100%;
@@ -119,6 +120,7 @@
         line-height: 2rem;
         text-align: justify;
         margin-bottom: 20px;
+        visibility: hidden;
       }
     }
   }
