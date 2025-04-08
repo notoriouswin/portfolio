@@ -55,23 +55,27 @@ section {
 @media (max-width: 480px) {
   body {
     height: 395dvh;
+    overflow-x: hidden;
   }
 }
 
 @media (max-width: 412px) {
   body {
     height: 400dvh;
+    overflow-x: hidden;
   }
 }
 
 @media (max-width: 412px) and (min-height: 900px) {
   body {
     height: 375dvh;
+    overflow-x: hidden;
   }
 }
 
 @media (max-width: 380px) {
   body {
     height: 430dvh;
+    overflow-x: hidden;
   }
 }

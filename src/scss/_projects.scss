@@ -22,7 +22,6 @@
       font-size: 2em;
       position: relative;
       margin-bottom: 20px;
-      visibility: hidden;
 
       &::after {
         content: "";
@@ -48,7 +47,6 @@
       border-radius: 20px;
       margin-bottom: 40px;
       padding: 20px 0px;
-      visibility: hidden;
 
       p {
         text-align: center;

@@ -294,7 +294,6 @@ header nav.active .nav-list a {
     font-size: 2em;
     position: relative;
     margin-bottom: 20px;
-    visibility: hidden;
   }
   section.about h1::after {
     content: "";
@@ -312,7 +311,6 @@ header nav.active .nav-list a {
     display: flex;
     justify-content: center;
     margin-bottom: 25px;
-    visibility: hidden;
   }
   section.about .profile-picture img {
     height: 100%;
@@ -324,7 +322,6 @@ header nav.active .nav-list a {
     line-height: 2rem;
     text-align: justify;
     margin-bottom: 20px;
-    visibility: hidden;
   }
 }
 @media (max-width: 360px) {
@@ -351,7 +348,6 @@ header nav.active .nav-list a {
     font-size: 2em;
     position: relative;
     margin-bottom: 20px;
-    visibility: hidden;
   }
   .projects h1::after {
     content: "";
@@ -375,7 +371,6 @@ header nav.active .nav-list a {
     border-radius: 20px;
     margin-bottom: 40px;
     padding: 20px 0px;
-    visibility: hidden;
   }
   .projects .project p {
     text-align: center;
@@ -760,21 +755,25 @@ section {
 @media (max-width: 480px) {
   body {
     height: 395dvh;
+    overflow-x: hidden;
   }
 }
 @media (max-width: 412px) {
   body {
     height: 400dvh;
+    overflow-x: hidden;
   }
 }
 @media (max-width: 412px) and (min-height: 900px) {
   body {
     height: 375dvh;
+    overflow-x: hidden;
   }
 }
 @media (max-width: 380px) {
   body {
     height: 430dvh;
+    overflow-x: hidden;
   }
 }
 

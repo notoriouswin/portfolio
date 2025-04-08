@@ -13,7 +13,7 @@ revelar.reveal('.tAbout',{
 
 revelar.reveal('.profile-picture',{
     duration: 1000,
-    distance: '300px',
+    distance: '200px',
     origin: "right",
     easing: "ease-in-out"
 })
@@ -29,14 +29,14 @@ revelar.reveal('.text',{
 
 revelar.reveal('.tProject',{
     duration: 1000,
-    distance: '250px',
+    distance: '200px',
     origin: "left",
     easing: "ease-in-out"
 })
 
 revelar.reveal('.project',{
     duration: 1000,
-    distance: '250px',
+    distance: '200px',
     origin: "left",
     easing: "ease-in-out"
 })
