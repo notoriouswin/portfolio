@@ -83,6 +83,9 @@
       font-size: 2em;
       position: relative;
       margin-bottom: 20px;
+      animation: scrollanimation 5s ease-in-out;
+      animation-timeline: view();
+      animation-range: cover 0% cover 30%;
 
       &::after {
         content: "";
@@ -103,6 +106,9 @@
       display: flex;
       justify-content: center;
       margin-bottom: 25px;
+      animation: scrollanimation 5s ease-in-out;
+      animation-timeline: view();
+      animation-range: cover 0% cover 30%;
 
       img {
         height: 100%;
@@ -118,6 +124,9 @@
         line-height: 2rem;
         text-align: justify;
         margin-bottom: 20px;
+        animation: scrollanimation 5s ease-in-out;
+        animation-timeline: view();
+        animation-range: cover 0% cover 30%;
       }
     }
   }

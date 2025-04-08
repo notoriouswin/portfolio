@@ -15,13 +15,16 @@
       width: 100vw;
       overflow-x: hidden;
       background: url(../assets/images/projects.svg) no-repeat left;
-      background-size: 400px;
+      background-size: 380px;
     }
 
     h1 {
       font-size: 2em;
       position: relative;
       margin-bottom: 20px;
+      animation: scrollanimation 5s ease-in-out;
+      animation-timeline: view();
+      animation-range: cover 0% cover 30%;
 
       &::after {
         content: "";
@@ -47,6 +50,9 @@
       border-radius: 20px;
       margin-bottom: 40px;
       padding: 20px 0px;
+      animation: scrollanimation 5s ease-in-out;
+      animation-timeline: view();
+      animation-range: cover 0% cover 30%;
 
       p {
         text-align: center;
