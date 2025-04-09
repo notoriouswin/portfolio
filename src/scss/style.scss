@@ -23,6 +23,19 @@ html {
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(60, 60, 60);
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(8, 7, 11);
+}
+
 // Estilo do corpo
 body {
   background-color: $bg-body;

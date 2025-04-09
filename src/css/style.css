@@ -2,8 +2,8 @@
 @keyframes animleft {}
 header {
   height: 70px;
-  width: 100%;
-  padding: 0px 25px;
+  width: 100dvw;
+  padding: 0px 35px;
   background-color: rgba(8, 7, 11, 0.8705882353);
   backdrop-filter: blur(3px);
   display: flex;
@@ -733,6 +733,19 @@ footer p a {
 
 html {
   scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(60, 60, 60);
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(8, 7, 11);
 }
 
 body {
