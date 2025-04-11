@@ -10,11 +10,7 @@ Este projeto foi desenvolvido com o objetivo de apresentar meus projetos, habili
 
 <br>
 
-<div align="center>
-  
- <img src="../src/asets/images/imagereadme.jpeg>
-
-</div>
+ <img src="imgreadme.png" width="1000px">
 
 <br>
 <br>
