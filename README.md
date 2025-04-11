@@ -12,7 +12,7 @@ Este projeto foi desenvolvido com o objetivo de apresentar meus projetos, habili
 
 <div align="center>
   
-![Captura de tela 2025-04-10 221640](https://github.com/user-attachments/assets/62f7e614-f3a2-4ce8-bcd6-508728f8e37e)  
+ <img src="../src/asets/images/imagereadme.jpeg>
 
 </div>
 
