@@ -9,6 +9,10 @@ Este projeto foi desenvolvido com o objetivo de apresentar meus projetos, habili
 </div>
 
 <br>
+
+ <img src="imgreadme.png" width="1000px">
+
+<br>
 <br>
 
 ## 📫 Contribuindo para o Portfólio
