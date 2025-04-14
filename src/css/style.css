@@ -242,7 +242,7 @@ header nav.active .nav-list a {
     overflow-x: hidden;
     width: 113%;
     background: url(../assets/images/about.svg) no-repeat left;
-    background-size: 380px;
+    background-size: 300px;
   }
   section.about h1 {
     font-size: 2em;
@@ -291,7 +291,7 @@ header nav.active .nav-list a {
     height: 100px;
     width: 113%;
     background: url(../assets/images/about.svg) no-repeat left;
-    background-size: 380px;
+    background-size: 300px;
   }
   section.about h1 {
     font-size: 2em;
@@ -328,8 +328,8 @@ header nav.active .nav-list a {
   }
 }
 @media (max-width: 360px) {
-  .about {
-    height: 130vh;
+  section.about {
+    height: 155vh;
   }
 }
 @keyframes animleft {}
@@ -346,7 +346,7 @@ header nav.active .nav-list a {
     width: 100vw;
     overflow-x: hidden;
     background: url(../assets/images/projects.svg) no-repeat left;
-    background-size: 380px;
+    background-size: 300px;
   }
   .projects h1 {
     font-size: 2em;
@@ -415,7 +415,7 @@ header nav.active .nav-list a {
     height: 100px;
     width: 100vw;
     background: url(../assets/images/projects.svg) no-repeat left;
-    background-size: 400px;
+    background-size: 300px;
   }
   .projects h1 {
     font-size: 2em;
@@ -477,7 +477,7 @@ header nav.active .nav-list a {
     height: 125vh;
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 390px) {
   .projects {
     height: 165vh;
     display: flex;
@@ -489,7 +489,7 @@ header nav.active .nav-list a {
     height: 100px;
     width: 100vw;
     background: url(../assets/images/projects.svg) no-repeat left;
-    background-size: 480px;
+    background-size: 300px;
   }
   .projects h1 {
     font-size: 2em;
@@ -709,7 +709,7 @@ header nav.active .nav-list a {
 footer {
   height: 40px;
   width: 100%;
-  padding: 20px 0px;
+  padding: 40px 0px;
   display: flex;
   justify-content: center;
 }
@@ -789,6 +789,14 @@ section {
 @media (max-width: 380px) {
   body {
     height: 430dvh;
+  }
+}
+@media (width: 360px) and (height: 780px) {
+  body {
+    height: 500dvh;
+  }
+  section.about {
+    height: 160vh;
   }
 }
 

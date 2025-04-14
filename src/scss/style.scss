@@ -88,3 +88,13 @@ section {
     height: 430dvh;
   }
 }
+
+@media (width: 360px) and (height: 780px){
+  body {
+    height: 500dvh;
+  }
+
+  section.about{
+    height: 160vh;
+  }
+}

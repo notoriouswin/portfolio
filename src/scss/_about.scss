@@ -15,7 +15,7 @@
       overflow-x: hidden;
       width: 113%;
       background: url(../assets/images/about.svg) no-repeat left;
-      background-size: 380px;
+      background-size: 300px;
     }
 
     // Título da seção
@@ -76,7 +76,7 @@
       height: 100px;
       width: 113%;
       background: url(../assets/images/about.svg) no-repeat left;
-      background-size: 380px;
+      background-size: 300px;
     }
 
     // Título da seção
@@ -126,7 +126,7 @@
 
 // Estilos para dispositivos muito estreitos
 @media (max-width: 360px) {
-  .about {
-    height: 130vh;
+  section.about {
+    height: 155vh;
   }
 }

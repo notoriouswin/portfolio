@@ -15,7 +15,7 @@
       width: 100vw;
       overflow-x: hidden;
       background: url(../assets/images/projects.svg) no-repeat left;
-      background-size: 380px;
+      background-size: 300px;
     }
 
     h1 {
@@ -93,7 +93,7 @@
       height: 100px;
       width: 100vw;
       background: url(../assets/images/projects.svg) no-repeat left;
-      background-size: 400px;
+      background-size: 300px;
     }
 
     h1 {
@@ -165,7 +165,7 @@
   }
 
 // Estilos para dispositivos muito estreitos
-@media (max-width: 380px) {
+@media (max-width: 390px) {
   .projects {
     height: 165vh;
     display: flex;
@@ -177,7 +177,7 @@
       height: 100px;
       width: 100vw;
       background: url(../assets/images/projects.svg) no-repeat left;
-      background-size: 480px;
+      background-size: 300px;
     }
 
     h1 {
