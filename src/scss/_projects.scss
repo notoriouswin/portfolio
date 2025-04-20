@@ -1,10 +1,10 @@
 @import "variables";
 @import "mixins";
 
-
+// Estilos para telas maiores (largura mínima de 901px)
 @media (min-width: 901px) {
   .projects {
-    height: 180vh;
+    height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -14,7 +14,7 @@
     background-position: top left;
 
     .background-svg {
-    display: none;
+      display: none; // Oculta o SVG de fundo
     }
 
     h1 {
@@ -34,7 +34,7 @@
       }
     }
 
-    .container-project{
+    .container-project {
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -42,15 +42,13 @@
       align-items: center;
     }
 
-    .container-project .project:nth-child(1){
+    .container-project .project:nth-child(1) {
       align-self: flex-start;
     }
-
-    .container-project .project:nth-child(2){
+    .container-project .project:nth-child(2) {
       align-self: flex-end;
     }
-
-    .container-project .project:nth-child(3){
+    .container-project .project:nth-child(3) {
       align-self: flex-start;
     }
 
@@ -100,7 +98,7 @@
   }
 }
 
-
+// Estilos para telas médias (largura máxima de 900px)
 @media (max-width: 900px) {
   .projects {
     height: 100vh;
@@ -134,7 +132,7 @@
       }
     }
 
-    .container-project{
+    .container-project {
       width: 100%;
     }
 
@@ -179,6 +177,13 @@
         &:hover {
           transform: scale(1.1);
         }
+      }
+
+      .languages {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5px;
       }
     }
   }
@@ -341,12 +346,6 @@
     }
   }
 }
-
-@media (max-width: 414px) {
-    .projects{
-      height: 125vh;
-    }
-  }
 
 // Estilos para dispositivos muito estreitos
 @media (max-width: 390px) {
