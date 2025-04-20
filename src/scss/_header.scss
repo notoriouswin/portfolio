@@ -2,129 +2,216 @@
 @import "mixins";
 
 // Estilos para o cabeçalho fixo
-header {
-  height: 70px;
-  width: 100dvw;
-  padding: 0px 35px;
-  background-color: #08070bde;
-  backdrop-filter: blur(3px);
-  display: flex;
-  align-items: center;
-  position: fixed;
-  z-index: 1;
-
-  // Container principal do cabeçalho
-  .header-container {
-    height: 20px;
-    width: 100%;
+@media (max-width: 900px){
+  header {
+    height: 70px;
+    width: 100dvw;
+    padding: 0px 35px;
+    background-color: #08070bde;
+    backdrop-filter: blur(3px);
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
-    // Logo do cabeçalho
-    .logo {
-      height: 100%;
+    position: fixed;
+    z-index: 1;
+  
+    // Container principal do cabeçalho
+    .header-container {
+      height: 20px;
+      width: 100%;
       display: flex;
       align-items: center;
+      justify-content: space-between;
+  
+      // Logo do cabeçalho
+      .logo {
+        height: 100%;
+        display: flex;
+        align-items: center;
+  
+        a {
+          text-decoration: none;
+          color: white;
+          font-size: 1.2rem;
+  
+          span {
+            color: $blue-project;
+            font-family: arial;
+            font-size: 1rem;
+            font-weight: bold;
+          }
+        }
+      }
+  
+      // Menu do cabeçalho
+      menu {
+        height: 100%;
+        cursor: pointer;
+        z-index: 1;
+  
+        .hamburger {
+          height: 100%;
+          width: 100%;
+          padding: 1px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          position: relative;
+  
+  
+          span {
+            height: 2px;
+            width: 25px;
+            background-color: white;
+            z-index: 1;
+            transition: all 0.3s;
+          }
+        }
+  
+        .hamburger-active span:nth-child(1){
+          opacity: 0;
+        }
+  
+        .hamburger-active span:nth-child(2){
+          transform: rotate(135deg);
+          padding: 0px;
+          position: fixed;
+          bottom: 50%;
+        }
+  
+        .hamburger-active span:nth-child(3){
+          transform: rotate(-135deg);
+          padding: 0px;
+          position: fixed;
+          bottom: 50%;
+        }
+      }
+    }
+  
+    .nav-list{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100dvh; 
+      background-color: $bg-body;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      padding: 130px 0;
+      clip-path: circle(100px at 90% -15%); 
+      pointer-events: none;
+      transition: all 0.5s;
+      opacity: 0.5;
+     }
+  
+  
+     .nav-list a{
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 1.1em;
+      opacity: 0;
+      transition: all 0.5s;
+     }
+  
+     /* Estilos ativos */
+  
+     nav.active .nav-list{
+       clip-path: circle(1500px at 90% -15%);  
+       pointer-events: all;
+       opacity: 1;
+       
+     }
+  
+     nav.active .nav-list a{
+      opacity: 1;
+     }
+  }
+}
 
-      a {
-        text-decoration: none;
-        color: white;
-        font-size: 1.2rem;
 
-        span {
-          color: $blue-project;
-          font-family: arial;
-          font-size: 1rem;
-          font-weight: bold;
+@media (min-width: 901px){
+  header {
+    height: 70px;
+    width: 100dvw;
+    padding: 0px 110px;
+    background-color: #08070bde;
+    backdrop-filter: blur(3px);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+
+    .header-container {
+      height: 20px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+
+      menu{
+        display: none;
+      }
+
+
+      .logo {
+        height: 100%;
+        display: flex;
+        align-items: center;
+  
+        a {
+          text-decoration: none;
+          color: white;
+          font-size: 1.2rem;
+  
+          span {
+            color: $blue-project;
+            font-family: arial;
+            font-size: 1rem;
+            font-weight: bold;
+          }
         }
       }
     }
 
-    // Menu do cabeçalho
-    menu {
-      height: 100%;
-      cursor: pointer;
-      z-index: 1;
+    nav{
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-      .hamburger {
-        height: 100%;
+
+      .nav-list{
         width: 100%;
-        padding: 1px;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        position: relative;
+        justify-content: space-around;
+        gap: 70px;
 
+        a{
+          color: white;
+          text-decoration: none;
+          position: relative;
+        }
 
-        span {
+        a::after{
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0%;
           height: 2px;
-          width: 25px;
-          background-color: white;
-          z-index: 1;
+          background-color: $blue-project;
+          border-radius: 100px;
           transition: all 0.3s;
         }
-      }
+        
+        a:hover::after{
+          width: 100%;
+        }
 
-      .hamburger-active span:nth-child(1){
-        opacity: 0;
-      }
-
-      .hamburger-active span:nth-child(2){
-        transform: rotate(135deg);
-        padding: 0px;
-        position: fixed;
-        bottom: 50%;
-      }
-
-      .hamburger-active span:nth-child(3){
-        transform: rotate(-135deg);
-        padding: 0px;
-        position: fixed;
-        bottom: 50%;
       }
     }
   }
-
-  .nav-list{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100dvh; 
-    background-color: $bg-body;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    padding: 130px 0;
-    clip-path: circle(100px at 90% -15%); 
-    pointer-events: none;
-    transition: all 0.5s;
-    opacity: 0.5;
-   }
-
-
-   .nav-list a{
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 1.1em;
-    opacity: 0;
-    transition: all 0.5s;
-   }
-
-   /* Estilos ativos */
-
-   nav.active .nav-list{
-     clip-path: circle(1500px at 90% -15%);  
-     pointer-events: all;
-     opacity: 1;
-     
-   }
-
-   nav.active .nav-list a{
-    opacity: 1;
-   }
 }
