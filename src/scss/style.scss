@@ -64,6 +64,20 @@ section {
   height: 100vh;
 }
 
+
+
+@media (min-width: 901px){
+  body{
+    height: 500dvh;
+  }
+
+  main {
+    width: 100%;
+    height: 100%;
+    padding: 0px 110px;
+  }
+}
+
 // Ajustes para dispositivos menores
 @media (max-width: 480px) {
   body {

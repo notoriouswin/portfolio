@@ -1,25 +1,26 @@
 @import "variables";
 @import "mixins";
 
-// Estilos para dispositivos móveis (largos)
-@media (max-width: 900px) {
+
+
+@media (min-width: 901px) {
   .contact {
-    height: 65vh;
+    height: 80vh;
     width: 100%;
     @include center;
-    justify-content: center;
+    justify-content: flex-end;
     flex-direction: column;
     padding: 0px 30px;
 
     // Título principal
     h1 {
-      font-size: 1.3rem;
+      font-size: 2rem;
       margin-bottom: 20px;
     }
 
     // Subtítulo
     h2 {
-      font-size: 1rem;
+      font-size: 1.5rem;
       color: $gray-project;
       margin-bottom: 30px;
     }
@@ -28,14 +29,14 @@
     a {
       text-decoration: none;
       color: $blue-project;
-      font-size: 1.5rem;
+      font-size: 3rem;
       font-weight: bold;
       margin-bottom: 30px;
     }
 
     // Texto descritivo
     p {
-      font-size: 1.3rem;
+      font-size: 1.9rem;
       font-weight: 600;
       margin-bottom: 40px;
     }
@@ -48,7 +49,68 @@
       gap: 20px;
 
       .social {
-        font-size: 1rem;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: #919489;
+        transition: all 0.3s;
+
+        &:hover {
+          color: $blue-project;
+        }
+      }
+    }
+  }
+}
+
+
+// Estilos para dispositivos móveis (largos)
+@media (max-width: 900px) {
+  .contact {
+    height: 65vh;
+    width: 100%;
+    @include center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+
+    // Título principal
+    h1 {
+      font-size: 2.3rem;
+      margin-bottom: 20px;
+    }
+
+    // Subtítulo
+    h2 {
+      font-size: 1.5rem;
+      color: $gray-project;
+      margin-bottom: 30px;
+    }
+
+    // Link principal
+    a {
+      text-decoration: none;
+      color: $blue-project;
+      font-size: 2.0rem;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    // Texto descritivo
+    p {
+      font-size: 1.9rem;
+      font-weight: 600;
+      margin-bottom: 40px;
+    }
+
+    // Links sociais
+    .links {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+
+      .social {
+        font-size: 1.5rem;
         text-transform: uppercase;
         color: #919489;
         transition: all 0.3s;

@@ -118,6 +118,115 @@ header nav.active .nav-list a {
     opacity: 0;
   }
 }
+@media (min-width: 901px) {
+  section.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../assets/images/text.svg) no-repeat center;
+    background-size: contain;
+    position: relative;
+    z-index: 0;
+  }
+  section.home div.introduction {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  section.home div.introduction h1 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 3.5rem;
+  }
+  section.home div.introduction h1 span {
+    font-size: 2.4rem;
+  }
+  section.home div.introduction p {
+    max-width: 360px;
+    font-weight: 300;
+    line-height: 1.6rem;
+    margin-bottom: 10px;
+  }
+  section.home div.introduction .social-links {
+    width: 180px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  section.home div.introduction .social-links a {
+    height: 100%;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212024;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  section.home div.introduction button {
+    width: 195px;
+    height: 48px;
+    padding: 5px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.3s;
+  }
+  section.home div.introduction button:hover {
+    transform: scale(1.1);
+  }
+  section.home .arrow {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    height: 80px;
+    display: flex;
+  }
+  section.home .arrow span.one {
+    width: 10px;
+    height: 10px;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    transform: rotate(45deg) translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    top: 20%;
+    animation: todown 2s infinite ease-out;
+  }
+  section.home .arrow span.two {
+    width: 10px;
+    height: 10px;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    transform: rotate(45deg) translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    top: 20%;
+    animation: todown 2s infinite ease-out;
+    animation-delay: -0.2s;
+  }
+  section.home .arrow span.three {
+    width: 10px;
+    height: 10px;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    transform: rotate(45deg) translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    top: 20%;
+    animation: todown 2s infinite ease-out;
+    animation-delay: -0.4s;
+  }
+}
 @media (max-width: 900px) {
   section.home {
     display: flex;
@@ -337,9 +446,58 @@ header nav.active .nav-list a {
   }
 }
 @keyframes animleft {}
+@media (min-width: 901px) {
+  section.about {
+    height: 160vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(../assets/images/about.svg) no-repeat left;
+    background-size: 800px;
+    background-position: top left;
+  }
+  section.about .background-svg {
+    display: none;
+  }
+  section.about h1 {
+    font-size: 3em;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  section.about h1::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 10px;
+    left: 0;
+    bottom: 15%;
+    z-index: -1;
+    background-color: #3793FF;
+  }
+  section.about .profile-picture {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+  }
+  section.about .profile-picture img {
+    height: 100%;
+    border-radius: 100px;
+  }
+  section.about .text p {
+    max-width: 900px;
+    font-weight: 500;
+    line-height: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
 @media (max-width: 900px) {
   section.about {
-    height: 145vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -492,9 +650,95 @@ header nav.active .nav-list a {
   }
 }
 @keyframes animleft {}
+@media (min-width: 901px) {
+  .projects {
+    height: 180vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    scroll-margin-top: 100px;
+    background: url(../assets/images/projects.svg) no-repeat left;
+    background-size: 800px;
+    background-position: top left;
+  }
+  .projects .background-svg {
+    display: none;
+  }
+  .projects h1 {
+    font-size: 2em;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .projects h1::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 10px;
+    left: 0;
+    bottom: 15%;
+    z-index: -1;
+    background-color: #3793FF;
+  }
+  .projects .container-project {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .projects .container-project .project:nth-child(1) {
+    align-self: flex-start;
+  }
+  .projects .container-project .project:nth-child(2) {
+    align-self: flex-end;
+  }
+  .projects .container-project .project:nth-child(3) {
+    align-self: flex-start;
+  }
+  .projects .project {
+    background-color: #111111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 250px;
+    width: 75%;
+    border-radius: 20px;
+    margin-top: 120px;
+    padding: 100px 0px;
+  }
+  .projects .project p {
+    width: 450px;
+    text-align: center;
+    font-weight: 400;
+    padding: 0px 30px;
+    font-size: 0.9rem;
+  }
+  .projects .project a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    color: black;
+    width: 195px;
+    height: 48px;
+    padding: 5px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.3s;
+    text-decoration: none;
+  }
+  .projects .project a:hover {
+    transform: scale(1.1);
+  }
+}
 @media (max-width: 900px) {
   .projects {
-    height: 160vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -522,6 +766,9 @@ header nav.active .nav-list a {
     z-index: -1;
     background-color: #3793FF;
   }
+  .projects .container-project {
+    width: 100%;
+  }
   .projects .project {
     background-color: #111111;
     display: flex;
@@ -530,7 +777,7 @@ header nav.active .nav-list a {
     flex-direction: column;
     gap: 10px;
     height: 250px;
-    width: 80%;
+    width: 100%;
     border-radius: 20px;
     margin-bottom: 40px;
     padding: 20px 0px;
@@ -604,12 +851,13 @@ header nav.active .nav-list a {
     width: 100%;
     border-radius: 20px;
     margin-bottom: 40px;
-    padding: 20px 0px;
+    padding: 20px 20px;
   }
   .projects .project p {
+    max-width: 350px;
     text-align: center;
     font-weight: 400;
-    padding: 0px 30px;
+    padding: 10px 30px;
     font-size: 0.9rem;
   }
   .projects .project a {
@@ -709,7 +957,7 @@ header nav.active .nav-list a {
 }
 @media (max-width: 390px) {
   .projects {
-    height: 165vh;
+    height: 140vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -742,18 +990,25 @@ header nav.active .nav-list a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 10px;
-    height: 250px;
+    gap: 15px;
+    min-height: 260px;
     width: 100%;
     border-radius: 20px;
     margin-bottom: 40px;
-    padding: 20px 0px;
+    padding: 20px 20px;
   }
   .projects .project p {
     text-align: center;
     font-weight: 400;
-    padding: 0px 30px;
+    padding: 0px 40px;
     font-size: 0.9rem;
+  }
+  .projects .project .languages {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
   }
   .projects .project a {
     display: flex;
@@ -783,17 +1038,17 @@ header nav.active .nav-list a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 10px;
-    height: 250px;
+    gap: 15px;
+    min-height: 260px;
     width: 100%;
     border-radius: 20px;
     margin-bottom: 40px;
-    padding: 20px 0px;
+    padding: 20px 20px;
   }
   .projects .project p {
     text-align: center;
     font-weight: 400;
-    padding: 0px 30px;
+    padding: 0px 40px;
     font-size: 0.9rem;
   }
   .projects .project .languages {
@@ -822,6 +1077,54 @@ header nav.active .nav-list a {
   }
 }
 @keyframes animleft {}
+@media (min-width: 901px) {
+  .contact {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 0px 30px;
+  }
+  .contact h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .contact h2 {
+    font-size: 1.5rem;
+    color: #212024;
+    margin-bottom: 30px;
+  }
+  .contact a {
+    text-decoration: none;
+    color: #3793FF;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  .contact p {
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+  .contact .links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .contact .links .social {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #919489;
+    transition: all 0.3s;
+  }
+  .contact .links .social:hover {
+    color: #3793FF;
+  }
+}
 @media (max-width: 900px) {
   .contact {
     height: 65vh;
@@ -834,23 +1137,23 @@ header nav.active .nav-list a {
     padding: 0px 30px;
   }
   .contact h1 {
-    font-size: 1.3rem;
+    font-size: 2.3rem;
     margin-bottom: 20px;
   }
   .contact h2 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #212024;
     margin-bottom: 30px;
   }
   .contact a {
     text-decoration: none;
     color: #3793FF;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 30px;
   }
   .contact p {
-    font-size: 1.3rem;
+    font-size: 1.9rem;
     font-weight: 600;
     margin-bottom: 40px;
   }
@@ -861,7 +1164,7 @@ header nav.active .nav-list a {
     gap: 20px;
   }
   .contact .links .social {
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     color: #919489;
     transition: all 0.3s;
@@ -1001,6 +1304,16 @@ section {
   height: 100vh;
 }
 
+@media (min-width: 901px) {
+  body {
+    height: 500dvh;
+  }
+  main {
+    width: 100%;
+    height: 100%;
+    padding: 0px 110px;
+  }
+}
 @media (max-width: 480px) {
   body {
     height: 395dvh;
