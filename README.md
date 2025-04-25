@@ -1,4 +1,4 @@
-<h1 align=center>👽 Portfólio </h1> 
+<h1 align=center>👽 Portfólio </h1>  
 <p align=center>Bem-vindo(a) ao repositório do meu portfólio pessoal! 🚀  
 Este projeto foi desenvolvido com o objetivo de apresentar meus projetos, habilidades e contar um pouco sobre mim enquanto evoluo como desenvolvedor front-end.</p>
 
