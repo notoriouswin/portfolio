@@ -7,7 +7,7 @@ Este projeto foi desenvolvido com o objetivo de apresentar meus projetos, habili
   <img src="https://img.shields.io/badge/SASS-122F2B?style=for-the-badge&logo=sass&logoColor=white" />
   <img src="https://img.shields.io/badge/JavaScript-122F2B?style=for-the-badge&logo=javascript&logoColor=white" />
 </div>
-
+    
 <br>
   
  <img src="projeto.png" width="1000px"> 
