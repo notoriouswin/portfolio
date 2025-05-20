@@ -2,7 +2,7 @@
 <p align=center>Bem-vindo(a) ao repositório do meu portfólio pessoal! 🚀   
 Este projeto foi desenvolvido com o objetivo de apresentar meus projetos, habilidades e contar um pouco sobre mim enquanto evoluo como desenvolvedor front-end.</p> 
 
-<div align=center>
+<div align=center> 
   <img src="https://img.shields.io/badge/HTML5-122F2B?style=for-the-badge&logo=html5&logoColor=white" />
   <img src="https://img.shields.io/badge/SASS-122F2B?style=for-the-badge&logo=sass&logoColor=white" />
   <img src="https://img.shields.io/badge/JavaScript-122F2B?style=for-the-badge&logo=javascript&logoColor=white" />
