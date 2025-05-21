@@ -10,7 +10,7 @@ Este projeto foi desenvolvido com o objetivo de apresentar meus projetos, habili
     
 <br>
   
- <img src="projeto.png" width="1000px"> 
+ <img src="projeto.png" width="1000px">  
 <br> 
 <br>
 
